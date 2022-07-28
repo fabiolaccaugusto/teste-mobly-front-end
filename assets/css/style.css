@@ -1,0 +1,301 @@
+/* ---------- font & reset css ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0px;
+    width: 100%;
+    min-width: 320px;
+}
+
+:root {
+    --c-navyblue: #1a253b;
+    --c-purple: #5f22a8;
+    --c-orange: #ff4600;
+    --c-black: #414141;
+    --c-seadarkblue: #007693;
+    --bg-light: #f5f9f2;
+    --bg-dark: #edece6;
+    --bg-input: #e0e7e0;
+}
+
+
+/* ======= Header Top =======  */
+
+header {
+    text-align: center;
+    background-color: #f5f9f2;
+    align-items: center;
+    margin: 20px;
+}
+
+.header {
+    width: auto;
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header input {
+    font-size: 17px;
+    margin-right: -2px;
+    width: 257px;
+    padding: 0 5px 0 15px;
+    line-height: 70px;
+    font-style: italic;
+    color: #414141;
+    background: #e0e6e0;
+    border-radius: 3px;
+}
+
+.header img {
+    padding: 0px 24px;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu li {
+    padding: 2px;
+}
+
+.header__menu li a .iconify {
+    font-size: 30px;
+}
+
+.header__menu li a .iconify:hover {
+    color: #ff4600;
+}
+
+.header__menu a {
+    padding: 2px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu p {
+    margin: 10px;
+    color: #495458;
+    font-size: 15px;
+}
+
+.header__cart span {
+    display: flex;
+    background-color: #6022a9;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+.header__cart span:hover {
+    background-color: #ff4600;
+}
+
+.header__cart .iconify {
+    color: #fff;
+    font-size: 20px;
+}
+
+.header__cart .iconify:hover {
+    color: #1a253b;
+}
+
+.header__cart p {
+    padding: 0px 10px 5px 10px;
+    font-size: 20px;
+}
+
+.header button {
+    width: 75px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    background: #5f22a8;
+    border-radius: 3px;
+}
+
+.header button:hover {
+    cursor: pointer;
+    background: #ff4600;
+}
+
+
+/* ======= Menu de navegação =======  */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a span:hover {
+    color: #ff4600;
+}
+
+nav ul li a .iconify {
+    padding-top: 3px;
+    color: #ff4600;
+    font-weight: bold;
+}
+
+nav ul li span {
+    padding-right: 10px;
+}
+
+nav :nth-child(1) a,
+nav :nth-child(2) a {
+    color: #424242;
+
+}
+
+nav :nth-child(3) a,
+nav :nth-child(4) a,
+nav :nth-child(5) a,
+nav :nth-child(6) a {
+    color: #6022a9;
+}
+
+nav :nth-child(3) a:hover,
+nav :nth-child(4) a:hover,
+nav :nth-child(5) a:hover,
+nav :nth-child(6) a:hover {
+    color: #ff4600;
+}
+
+
+
+/* ======= Main =======  */
+
+main {
+    border-top: 1px solid #ccc;
+    background-color: #f5f9f2;
+    text-align: center;
+    align-items: center;
+    margin: -20px 20px 20px 20px;
+}
+
+.main {
+    padding-top: -20px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: auto;
+}
+
+.banner {
+    background-image: url("/assets/img/1. Destaque/20190523-Lancamentos-Desktop-1-Destaque.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 480px;
+}
+
+.banner h1 {
+    font-size: 90px;
+}
+
+.banner p {
+    color: #9b99a6;
+    padding-bottom: 45px;
+}
+
+.banner a {
+    background-color: #007693;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.banner a:hover {
+    background-color: #ff4600;
+    color: #fff;
+
+}
+
+.container {
+    text-align: initial;
+    width: 80%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.lancamentos__section2 img {
+    width: 110%;
+    padding: 30px 0;
+}
+
+.lancamentos__destaques,
+.grandes__ofertas,
+.novidades {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.lancamentos__destaques img {
+    margin-top: -130px;
+    padding: 0 10px;
+}
+
+.lancamentos__destaques img:hover {
+    zoom: 110%;
+}
+
+.grandes__ofertas img {
+    padding: 0 10px;
+}
+
+.grandes__ofertas img:hover {
+    border: 2px solid #ff4600;
+    border-radius: 12px;
+}
+
+.lancamentos__destaques p {
+    display: flex;
+    margin-top: -140px;
+    padding: 20px;
+}
+
+.novidades div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    background-color: #f5f9f2;
+    align-items: center;
+    margin: 20px;
+}
